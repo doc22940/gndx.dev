@@ -688,7 +688,7 @@ h6 {
 }
 
 .site-logo {
-    height: 25px;
+    height: 48px;
 }
 
 .site-mast {
@@ -733,7 +733,6 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0 0 0;
 }
 
 .site-nav-left {
@@ -764,12 +763,17 @@ h6 {
 
 /* Index
 /* ---------------------------------------------------------- */
-
+.container_blocks {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 30px;
+    grid-template-columns: 3fr 1fr;
+}
 .post-feed {
     display: grid;
     justify-content: space-between;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 @media (max-width: 980px) {
@@ -1160,3 +1164,143 @@ h6 {
   .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
   }
+
+.site-mast-left {
+    display: flex;
+    align-items: center;
+}
+.site-mast-left h1 {
+    color: white;
+    margin: 0 0 0 1em;
+    font-size: 22px;
+}
+.site-mast-left span {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+    @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+
+    .Hero {
+    width: 100%;
+    position: relative;
+    }
+
+    .Hero-top img {
+    width: 32px;
+    }
+
+    .Hero-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .Hero-content {
+        margin-top: 3rem;
+    }
+
+    .Hero-content h1 {
+    font-weight: 700;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 0.875;
+    text-transform: uppercase;
+    margin: 0;
+    }
+
+    .Hero-content p {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+    }
+
+    @media (max-width: 960px) {
+    .Hero-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+    }
+
+    .Hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    }
+
+    .Hero-content p {
+    font-size: 1.2rem;
+    }
+    }
+
+    @media (max-width: 700px) {
+    .Hero::after {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+    }
+    .Hero-head img {
+    padding: 1em;
+    }
+
+    .Hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    }
+
+    .Hero-content p {
+    font-size: 1rem;
+    }
+    }
+
+    @media (max-height: 600px) {
+    .Hero-content {
+    margin-top: 3rem;
+    }
+    }
+    .Hero-items {
+    display: block;
+    }
+    .Hero-item {
+    display: flex;
+    margin: 0 2.5em 0 0;
+    }
+    .Hero-item img {
+    width: 40px;
+    height: auto;
+    margin: 0 1em 0 0;
+    padding: 0;
+    }
+    .Hero figure {
+    margin: 5px 0;
+    }
+    .Hero-item h2 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    }
+    .Hero-item span {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    }
+    .Hero-item p {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    }
+    .Hero-title a {
+    text-decoration: none;
+    color: #3c484e;
+    }
